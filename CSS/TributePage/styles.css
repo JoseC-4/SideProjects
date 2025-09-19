@@ -1,0 +1,38 @@
+body{
+  font-family:Georgia;
+  font-size:1rem;
+  width:100%;
+  margin:0 auto;
+}
+
+#main{
+  margin:0 auto;
+  width:600px;
+  max-width:600px;
+  min-width:600px;
+  background-color:#fff;
+}
+
+ul > li {
+  margin: 10px 0;
+}
+.bold{
+  font-weight:bold;
+}
+#image{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:0 auto;
+}
+
+.quote{
+  margin:10px 0;
+  font-style:italic;
+}
+
+.author{
+  text-transform:uppercase;
+  font-weight:bold;
+  font-style:italic;
+}

@@ -1,0 +1,117 @@
+body{
+    background-color:antiquewhite;
+    margin:0 auto;
+}
+
+#nav{
+    width:100%;
+    text-align:center;
+    background-color:darkslategray;
+    margin:0 auto;
+    padding:20px;
+    border-bottom:2px solid yellow;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+#playing-cards{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-items:center;
+    gap:20px;
+    max-width:1000px;
+    margin:5px auto;
+    padding:40px 20px;
+    border-radius:10px;
+    border: 2px solid black;
+    
+}
+
+.card{
+    display:flex;
+    border:2px solid black;
+    min-width:250px;
+    max-width:250px;
+    height:350px;
+    padding:5px;
+    
+    justify-content: space-between;
+    font-size:30px;
+    
+    border-radius: 10px;
+    box-sizing:border-box;
+
+    text-align:center;
+    box-shadow:2px 2px 5px black;
+    background-color:#fff;
+
+}
+
+.horizontal-card{
+    display:flex;
+    min-width:350px;
+    max-width:350px;
+    height:250px;
+    border:2px solid black;
+    border-radius:10px;
+
+    justify-content:space-between;
+    flex-direction: column;
+    text-align:center;
+
+
+    box-sizing:border-box;
+    padding:5px;
+    font-size:30px;
+    box-shadow:2px 2px 5px black;
+    background-color:#fff;
+
+    
+}
+
+.left, .upper-section{
+    align-self:flex-start;
+}
+
+.middle{
+    align-self:center;
+    font-size:70px;
+    display:flex;
+    flex-direction:column;
+}
+
+.middle-section{
+    align-self:center;
+    font-size:70px;
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+}
+.right, .lower-section{
+    align-self:flex-end;
+}
+#testing{
+    width:40px;
+    text-align:right;
+    align-items:center;
+    margin:0px 20px 0px 20px;
+}
+
+#testing2{
+    width:40px;
+    text-align:right;
+    align-items:center;
+    margin:0px 10px 0px 10px;
+}
+.flipped{
+    transform:rotate(180deg);
+}
+.flipped-horizontal{
+    transform:rotate(90deg);
+}
+
+.flipped-negative{
+    transform:rotate(-90deg);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thanks for using our services, please share about your experience</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="name" id="name-label">Name (required)</label>
+        <input type="text" id="name" name="name" placeholder ="Ex.John Doe" required>
+
+        <label for="email" id="email-label">Email (required)</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="number" id="number-label">Age (required)</label>
+        <input type="number" id="number" name="number" min="0" max="100" placeholder="1-100" required>
+      </fieldset>
+      <fieldset>
+        <legend>Radio Buttons</legend>
+        <label for="_first">Box1</label>
+        <input type="radio" id="_first" name="box" value="_first">
+
+        <label for="_second">Box2</label>
+        <input type="radio" id="_second" name="box" value="_first">
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Checkboxes</legend>
+        <label for="checkb1">box1</label>
+        <input type="checkbox" id="checkb1" name="checkb1" value="checkb1">
+
+        <label for="checkb2">box2</label>
+        <input type="checkbox" id="checkb2" name="checkb2" value="checkb2">
+
+        <label for="checkb3">box3</label>
+        <input type="checkbox" id="checkb3" name="checkb3" value="checkb3">
+
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Dropdowns</legend>
+        <select id="dropdown">
+          <option id="first">First</option>
+          <option id="second">Second</option>
+          <option id="third">Third</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Textarea</legend>
+        <label for="comments">Any comments</label>
+        <textarea id="comments"> </textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Submit</legend>
+        <button id="submit">Submit</submit>
+      </fieldset>
+    </form>
+
+  </body>
+</html>

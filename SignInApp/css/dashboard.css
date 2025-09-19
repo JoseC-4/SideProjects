@@ -1,0 +1,43 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0 auto;
+    font-family:Tahoma;
+    font-size:1.1rem;
+}
+
+
+#navbar{
+    margin:0;
+    height:80px;
+    width:100%;
+    background-color:cadetblue;
+
+}
+
+.navbaritems{
+    font-size:30px;
+}
+
+
+.option{
+    
+    width:250px;
+    height:100px;
+    border:2px solid black;
+    display:inline-block;
+    border-radius:15px;
+    margin:25px 10px 10px 10px;
+    text-align:center;
+}
+
+.option:hover{
+    transform:scale(1.1);
+    transition: transform 0.1s ease-in-out;
+}
+
+.option:active{
+    
+}

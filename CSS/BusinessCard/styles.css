@@ -1,0 +1,61 @@
+body{
+  background-color:rgb(162, 175, 175);
+  font-family:sans-serif;
+}
+.business-card{
+  width:400px;
+  background-color:rgb(223, 218, 212);
+  text-align:center;
+  padding:20px;
+  margin-top:100px;
+  
+  margin-left:auto;
+  margin-right:auto;
+
+  
+  border-style:solid; 
+  border-color:darkgrey;
+  border-width:2px;
+  box-shadow: 5px 5px 5px grey;
+
+  border-radius: 15px;
+}
+
+.profile-image{
+  max-width:100%;
+  border-style:solid;
+  border-color:darkgrey;
+  border-width: 2px;
+}
+.full-name{
+  font-size:20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding:3px;
+}
+.occupation{
+  font-size:17px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding:3px;
+}
+
+.company{
+  font-size:17px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding:3px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color:darkblue;
+}
+a:visited{
+  color:brown
+}
+
+a:active{
+  color:darkblue;
+}
+
