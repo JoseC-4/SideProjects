@@ -1,0 +1,17 @@
+body{
+    text-align:center;
+    background-color:lightblue;
+}
+#quote{
+    font-size:1.3rem;
+    font-weight:bolder;
+}
+.button{
+    padding:8px 20px;
+    border:1px solid grey;
+    box-shadow:1px 2px 3px;
+    border-radius:10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:medium;
+    margin:2px;
+}

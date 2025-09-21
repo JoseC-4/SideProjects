@@ -1,0 +1,22 @@
+body{
+    text-align:center;
+    background-color:lightblue;
+}
+
+.button{
+    padding:8px 20px;
+    border:1px solid grey;
+    box-shadow:1px 2px 3px;
+    border-radius:10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:medium;
+    margin:2px;
+}
+
+input[type=text]{
+    padding:8px;
+}
+
+label{
+    font-size:1.2rem;
+}
