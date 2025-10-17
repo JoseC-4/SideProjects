@@ -1,6 +1,6 @@
-//api key: 5d9acaad8aa64f5bb774970b6ab38e15
 
-const apiKey =`5d9acaad8aa64f5bb774970b6ab38e15`
+const apiKey="ADD APIKEY HERE"//add your apikey here from https://newsapi.org/ :)
+
 
 const blogContainer = document.getElementById("blog-container")
 const inputContent= document.getElementById("search-input")
@@ -43,12 +43,11 @@ async function fetchNewsQuery(query){
 
 
 async function fetchNews(){
-
     try {
-        const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&pageSize=10&apiKey=${apiKey}`
-        const response = await fetch(apiUrl)
-        const data = await response.json()
-        return data.articles;
+            const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&pageSize=10&apiKey=${apiKey}`
+            const response = await fetch(apiUrl)
+            const data = await response.json()
+            return data.articles;
     } catch (error) {
         console.error("Error found while fetching url",error)
     }
@@ -56,37 +55,52 @@ async function fetchNews(){
 
 
 function displayArticle(articles){
-    blogContainer.innerHTML = ""
-    articles.forEach((article) =>{
-        const newDiv = document.createElement('div')
-        newDiv.classList.add("blog-card")
-        
-        const img = document.createElement("img")
-        if(article.urlToImage === null){
-            img.src= 'https://dummyimage.com/600x400/000/fff'
-        }else{
-            img.src = article.urlToImage;
-        }
-        const newH2 = document.createElement("h2")
-        if(article.title <=30){
-            newH2.textContent=article.title
-        }else{
-            newH2.textContent=article.title.slice(0,30)+"...."
-        }
+    if(apiKey==="ADD APIKEY HERE"){
+            const mainContent = document.getElementById("blog-container")
+            const newDiv = document.createElement("div")
+            const addapikey = document.createElement("h2")
+            const link = document.createElement("a")
+            link.href= 'https://newsapi.org/'
+            link.textContent="Click here to get your apikey"
+            link.target="_blank"
+            addapikey.textContent="Remember to add your own api key for the program to work"
 
-        const content = document.createElement("p")
-        if(article.description.length <=120){
-            content.textContent = article.description
-        }else{
-            content.textContent=article.description.slice(0,100)+"....";
-        }   
-        newDiv.appendChild(img)
-        newDiv.appendChild(newH2)
-        newDiv.appendChild(content)
+            newDiv.append(addapikey)
+            newDiv.append(link)
+            mainContent.append(newDiv);
+    }else{ 
+            blogContainer.innerHTML = ""
+            articles.forEach((article) =>{
+                const newDiv = document.createElement('div')
+                newDiv.classList.add("blog-card")
+                
+                const img = document.createElement("img")
+                if(article.urlToImage === null){
+                    img.src= 'https://dummyimage.com/600x400/000/fff'
+                }else{
+                    img.src = article.urlToImage;
+                }
+                const newH2 = document.createElement("h2")
+                if(article.title <=30){
+                    newH2.textContent=article.title
+                }else{
+                    newH2.textContent=article.title.slice(0,30)+"...."
+                }
 
-        blogContainer.appendChild(newDiv)
-    })
-}
+                const content = document.createElement("p")
+                if(article.description.length <=120){
+                    content.textContent = article.description
+                }else{
+                    content.textContent=article.description.slice(0,100)+"....";
+                }   
+                newDiv.appendChild(img)
+                newDiv.appendChild(newH2)
+                newDiv.appendChild(content)
+
+                blogContainer.appendChild(newDiv)
+            
+            })
+}}
 
 (async ()=>{
     try {
@@ -97,5 +111,6 @@ function displayArticle(articles){
         return []
     }
 })();
+
 
 
